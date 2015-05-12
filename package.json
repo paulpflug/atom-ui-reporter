@@ -1,0 +1,32 @@
+{
+  "name": "atom-ui-reporter",
+  "description": "mocha reporter for the atom mocha-ui package",
+  "version": "0.0.1",
+  "homepage": "https://github.com/paulpflug/",
+  "author": {
+    "name": "Paul Pflugradt",
+    "email": "paul.pflugradt@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/paulpflug/atom-ui-reporter"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "main": "atom-ui-reporter.js",
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "coffee-script": "^1.9.1",
+    "mocha": "^2.2.4"
+  },
+  "keywords": [
+    "mocha",
+    "report"
+  ],
+  "readmeFilename": "README.md",
+  "scripts": {
+    "build": "coffee --compile --output ./ src/*.coffee",
+    "watch": "coffee --watch --output ./ src/*.coffee"
+  }
+}
